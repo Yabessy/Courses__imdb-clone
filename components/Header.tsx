@@ -5,8 +5,8 @@ import HeaderIcon from "./HeaderIcon"
 
 export default function Header() {
   return (
-    <div className="flex">
-      <div className="flex">
+    <div className="flex flex-col items-center p-6 select-none sm:flex-row sm:justify-between bg-gray-700 text-gray-200">
+      <div className="flex ">
         <HeaderIcon Icon={HomeIcon} title={`Home`} />
         <HeaderIcon Icon={UserIcon} title={`Home`} />
         <HeaderIcon Icon={PhoneIcon} title={`Home`} />
@@ -17,6 +17,7 @@ export default function Header() {
         alt=""
         width={100}
         height={50}
+        className="cursor-pointer active:brightness-110 mt-2 sm:mt-0G"
       />
     </div>
   )
